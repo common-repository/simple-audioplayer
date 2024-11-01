@@ -1,0 +1,51 @@
+.audioplayer {
+    padding: 1em;
+    background-color: transparent;
+    color: #000;
+    border-radius: .5em;
+    border: 2px solid #909090;
+}
+.showimage {
+    height: 7em;
+    float: left;
+    margin-right: 1em;
+}
+.player:after { clear: both; }
+svg { cursor: pointer; }
+.track-controls {
+    width: 4em;
+    margin-right: 1em;
+    float: left;
+}
+.track-information {
+    display: table-cell;
+    vertical-align: middle;
+    height: 4em;
+}
+.track-information .title {
+    font-size: 1.5em;
+    display: block;
+}
+.track-information .subtitle{ color: #909090; }
+.track-information::after {
+    content: "";
+    clear: both;
+}
+.advanced-controls {
+    margin-top: 1em;
+    margin-left: 1em;
+    display: inline-block;
+}
+.no-image .advanced-controls { margin-left: 0; }
+.advanced-controls svg {
+    position: relative;
+    top: .2em;
+}
+.advanced-controls * { float: left; }
+.advanced-controls::after { 
+    content: '';
+    clear: both;
+}
+.time { margin-right: 2em; }
+.vol-value { padding: 0 .25em; }
+.btn-pause { display: none; }
